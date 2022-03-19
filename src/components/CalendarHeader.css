@@ -1,0 +1,19 @@
+.calendar_header {
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  padding-top: 0.5rem; /* 8px */
+  padding-bottom: 0.5rem; /* 8px */
+  display: flex;
+  align-items: center;
+}
+.calendar_logo {
+  margin-right: 0.5rem; /* 8px */
+  width: 3rem; /* 48px */
+  height: 3rem; /* 48px */
+}
+.calendar_title {
+  margin-right: 2.5rem; /* 40px */
+  font-size: x-large;
+  color: grey;
+  font-weight: bold;
+}
