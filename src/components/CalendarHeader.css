@@ -17,3 +17,9 @@
   color: grey;
   font-weight: bold;
 }
+.calendar_month_display {
+  font-weight: bold;
+  color: gray;
+  margin-right: 2.5rem; /* 40px */
+  font-size: x-large;
+}
