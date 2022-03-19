@@ -1,8 +1,13 @@
 import React from 'react'
+import CreateEventButton from './CreateEventButton'
+
+import './Sidebar.css'
 
 const Sidebar = () => {
     return (
-        <div>Sidebar</div>
+        <aside className='sidebar_container'>
+            <CreateEventButton />
+        </aside>
     )
 }
 

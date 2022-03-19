@@ -20,11 +20,14 @@ const CalendarHeader = () => {
     const handleNextMonth = () => {
         setMonthIndex(monthIndex + 1)
     }
+    const handleResetDate = () => {
+        setMonthIndex(dayjs().month())
+    }
     return (
         <header className='calendar_header'>
             <img src={calendarLogo} alt="calendarLogo" className='calendar_logo' />
             <h1 className='calendar_title' >Calendar</h1>
-            <Button variant='contained' size='small' color='primary'>Today</Button>
+            <Button variant='contained' size='small' color='primary' onClick={handleResetDate}>Today</Button>
             <IconButton onClick={handlePrevMonth}>
                 <ChevronLeftIcon />
             </IconButton>
