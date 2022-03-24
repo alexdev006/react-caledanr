@@ -1,0 +1,55 @@
+.smallcal-container {
+  margin-top: 1.25rem;
+}
+
+.smalcal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallcal-title {
+  color: grey;
+  font-weight: bold;
+}
+
+.chevron-icon {
+  cursor: pointer;
+}
+
+.grid-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.grid-days-name {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  padding-top: 0.25rem; /* 4px */
+  padding-bottom: 0.25rem; /* 4px */
+  text-align: center;
+}
+
+.grid-day-number {
+  padding-top: 0.25rem; /* 4px */
+  padding-bottom: 0.25rem; /* 4px */
+  width: 100%;
+  cursor: pointer;
+  border: solid 1px orange;
+}
+
+.grid-numb-rounded {
+  background-color: rgb(37 99 235);
+  color: white;
+  border-radius: 9999px;
+  border: none;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.1em;
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
