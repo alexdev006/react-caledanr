@@ -3,16 +3,19 @@
   display: flex;
   flex-direction: column;
 }
+
 .day_cell_header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .day_name {
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
   margin-top: 0.25rem;
 }
+
 .day_number {
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
@@ -21,6 +24,7 @@
   margin-bottom: 0.25rem; /* 4px */
   text-align: center;
 }
+
 .day_text_rounded {
   background-color: rgb(37 99 235);
   color: white;
@@ -34,4 +38,10 @@
   margin-top: 0.25rem; /* 4px */
   margin-bottom: 0.25rem; /* 4px */
   text-align: center;
+}
+
+.day-grid-cell {
+  cursor: pointer;
+  flex: 1 1 0%;
+  font-weight: bold;
 }

@@ -31,7 +31,7 @@ const CalendarHeader = () => {
             <IconButton onClick={handlePrevMonth}>
                 <ChevronLeftIcon />
             </IconButton>
-            <IconButton onClick={handleNextMonth} >
+            <IconButton onClick={handleNextMonth}>
                 <ChevronRightIcon />
             </IconButton>
             <h2 className='calendar_month_display'>

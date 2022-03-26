@@ -12,7 +12,7 @@ import './SmallCalendar.css'
 
 const SmallCalendar = () => {
 
-    const { monthIndex } = useContext(GlobalContext)
+    const { monthIndex, setSmallCalendarMonth, setDaySelected, daySelected } = useContext(GlobalContext)
 
     const [currentMonthIdx, setCurrentMonthIdx] = useState(dayjs().month());
     const [currentMonth, setCurrentMonth] = useState(getMonth());
@@ -27,8 +27,11 @@ const SmallCalendar = () => {
         const format = 'DD-MM-YY'
         const nowDay = dayjs().format(format)
         const currDay = day.format(format)
+        const slcDay = daySelected && daySelected.format(format)
         if (nowDay === currDay) {
-            return `grid-numb-rounded`
+            return `grid-actual-rounded`
+        } else if (currDay === slcDay) {
+            return `grid-slcDay-rounded`
         } else {
             return ""
         }
@@ -51,11 +54,11 @@ const SmallCalendar = () => {
                     )}
                 </p>
                 <div className="chevron-icon">
-                    <IconButton onClick={handlePrevMonth} >
+                    <IconButton onClick={handlePrevMonth}>
                         <ChevronLeftIcon />
                     </IconButton>
-                    <IconButton  >
-                        <ChevronRightIcon onClick={handleNextMonth} />
+                    <IconButton onClick={handleNextMonth}>
+                        <ChevronRightIcon />
                     </IconButton>
                 </div>
             </header>
@@ -68,7 +71,7 @@ const SmallCalendar = () => {
                 {currentMonth.map((row, i) => (
                     <React.Fragment key={i}>
                         {row.map((day, idx) => (
-                            <button key={idx} className={getDayClass(day)} >
+                            <button key={idx} className={getDayClass(day)} onClick={() => { setSmallCalendarMonth(currentMonthIdx); setDaySelected(day) }} >
                                 <span>{day.format('D')}</span>
                             </button>
                         ))}

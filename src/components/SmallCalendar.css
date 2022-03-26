@@ -8,6 +8,9 @@
 }
 
 .smallcal-title {
+  border-top: solid 1px lightgrey;
+  padding-top: 1em;
+
   color: grey;
   font-weight: bold;
 }
@@ -38,7 +41,7 @@
   border: solid 1px orange;
 }
 
-.grid-numb-rounded {
+.grid-actual-rounded {
   background-color: rgb(37 99 235);
   color: white;
   border-radius: 9999px;
@@ -47,9 +50,21 @@
   height: 2.5em;
   margin: 0.1em;
 }
+
 button {
   padding: 0;
   border: none;
   background: none;
   cursor: pointer;
+}
+
+.grid-slcDay-rounded {
+  background-color: rgb(219 234 254);
+  border-radius: 9999px;
+  border: none;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.1em;
+  font-weight: bold;
+  color: rgb(37 99 235);
 }

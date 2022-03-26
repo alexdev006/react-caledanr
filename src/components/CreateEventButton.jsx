@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import { Button } from '@material-ui/core'
 import Icon from "@material-ui/core/Icon";
 
 import PlusBtn from '../assets/plus.svg'
+import GlobalContext from '../context/GlobalContext';
 
 
 const CreateEventButton = () => {
+
+    const { setShowEventModal } = useContext(GlobalContext)
 
     const plusBtn = (
         <Icon>
@@ -15,7 +18,7 @@ const CreateEventButton = () => {
     )
 
     return (
-        <Button variant='contained' startIcon={plusBtn} style={{ backgroundColor: 'white' }} >
+        <Button variant='contained' startIcon={plusBtn} style={{ backgroundColor: 'white' }} onClick={() => setShowEventModal(true)}>
             Create
         </Button>
     )

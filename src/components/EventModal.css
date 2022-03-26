@@ -1,0 +1,28 @@
+.event-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px lightgray;
+  cursor: grab;
+}
+
+.event-modal-icon:hover {
+  color: red;
+}
+
+.event-modal-input {
+  padding: 1em;
+}
+
+.event-modal-sub {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: row;
+  padding: 0.5em;
+}
+
+.modal-event-icon {
+  margin: 0.5em;
+}

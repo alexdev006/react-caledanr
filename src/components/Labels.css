@@ -1,0 +1,23 @@
+.lbl-title {
+  color: gray;
+  font-weight: bold;
+  border-top: solid 1px lightgrey;
+  padding-top: 1em;
+}
+
+.lbl-checkbox {
+  align-items: center;
+  margin-top: 1em;
+  display: block;
+}
+
+.input-checkbox {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.lbl-name {
+  margin-left: 0.5em;
+  text-transform: capitalize;
+  font-weight: bold;
+}
