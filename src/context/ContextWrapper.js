@@ -68,6 +68,13 @@ export default function ContextWrapper(props) {
     }
   }, [smallCalendarMonth]);
 
+  //clean la modal event à la fermeture
+  useEffect(() => {
+    if (!showEventModal) {
+      setSelectedEvent(null);
+    }
+  }, [showEventModal]);
+
   return (
     <GlobalContext.Provider
       value={{

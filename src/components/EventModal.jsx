@@ -65,7 +65,6 @@ export default function EventModal() {
     return (
         <div>
             <Dialog
-                fullWidth
                 maxWidth={'sm'}
                 open={showEventModal}
                 PaperComponent={PaperComponent}

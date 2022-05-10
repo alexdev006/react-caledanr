@@ -3,7 +3,6 @@ import GlobalContext from '../context/GlobalContext';
 
 import './Labels.css'
 
-
 const Labels = () => {
 
     const { labels, updateLabel } = useContext(GlobalContext);
@@ -22,7 +21,6 @@ const Labels = () => {
                     <span className="lbl-name">{lbl}</span>
                 </label>
             ))}
-
         </React.Fragment>
     )
 }
